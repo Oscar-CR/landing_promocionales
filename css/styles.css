@@ -246,7 +246,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: absolute; inset: 0; display: grid; place-items: center;
   padding: var(--esp-5);
   font-weight: 800; font-size: clamp(3rem, 12vw, 11rem); letter-spacing: 0.02em; white-space: nowrap;
-  background-image: url("../img/relleno-promostore.svg");
+  background-image: url("../img/banner1.png");
   background-size: cover; background-position: center;
   -webkit-background-clip: text; background-clip: text;
   color: transparent; -webkit-text-fill-color: transparent;
