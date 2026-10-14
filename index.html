@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2C4596" />
+
+  <title>PROMOSTORE | Artículos promocionales premium con tu marca</title>
+  <meta name="description" content="Merchandising corporativo de alta gama: termos, tecnología, libretas y bolígrafos personalizados con tu marca. Calidad premium y entregas puntuales." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PROMOSTORE | Artículos promocionales premium" />
+  <meta property="og:description" content="Merchandising corporativo que deja marca. Personalización premium, calidad garantizada y entregas a tiempo." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PROMOSTORE",
+    "description": "Artículos promocionales premium personalizados.",
+    "logo": "img/logo.svg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ================= ENCABEZADO ================= -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="PROMOSTORE, ir al inicio">
+        <img class="brand__mark" src="img/logo.svg" alt="" width="34" height="34" />
+        <span class="brand__name">PROMO<em>STORE</em></span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav-toggle__bar"></span>
+        <span class="visually-hidden">Abrir menú de navegación</span>
+      </button>
+
+      <nav id="menu-principal" class="site-nav" data-nav aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#producto">Producto</a></li>
+          <li><a class="site-nav__link" href="#catalogo">Catálogo</a></li>
+          <li><a class="site-nav__link" href="#clientes">Clientes</a></li>
+          <li><a class="site-nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm site-nav__cta" href="#contacto">Cotiza ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="chip">Merchandising corporativo</span>
+          <h1 class="hero__title" id="hero-title">
+            Tu marca, en cada <span class="text-accent">detalle</span>
+          </h1>
+          <p class="hero__lead">
+            Termos, tecnología y escritura premium personalizados con tu logo.
+            Piezas que tus clientes usarán a diario y recordarán siempre.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacto">Solicita tu cotización</a>
+            <a class="btn btn--ghost btn--lg" href="#producto">Ver el producto estrella</a>
+          </div>
+
+          <ul class="hero__trust" aria-label="Señales de confianza">
+            <li class="hero__trust-item"><strong>+1.200</strong><span>empresas atendidas</span></li>
+            <li class="hero__trust-item"><strong>48 h</strong><span>para tu cotización</span></li>
+            <li class="hero__trust-item"><strong>4.9/5</strong><span>satisfacción</span></li>
+          </ul>
+        </div>
+
+        <!-- Espacio a la derecha para tus imágenes de producto.
+             Reemplaza los src de ejemplo por tus fotos (mismo tamaño o libre). -->
+        <div class="hero__media">
+          <img class="hero__img" src="img/hero-1.svg" alt="Termo de acero personalizado" width="600" height="600" />
+          <img class="hero__img" src="img/hero-2.svg" alt="Cargador inalámbrico corporativo" width="600" height="600" loading="lazy" />
+          <img class="hero__img" src="img/hero-3.svg" alt="Libreta premium personalizada" width="600" height="600" loading="lazy" />
+          <img class="hero__img" src="img/hero-4.svg" alt="Bolígrafo ejecutivo personalizado" width="600" height="600" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTO DESTACADO (hueco para tu imagen) ================= -->
+    <section class="section showcase" id="producto" aria-labelledby="producto-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Producto destacado</p>
+          <h2 class="section-title" id="producto-title">La pieza que presenta tu marca</h2>
+          <p class="section-intro">Coloca aquí la fotografía de tu producto estrella; la marca de agua aporta el contexto.</p>
+        </header>
+
+        <figure class="showcase__panel">
+          <!-- Las letras PROMOSTORE se rellenan con tu(s) imagen(es).
+               El fondo del texto está en css/styles.css (.showcase__word ->
+               background-image). Cambia esa ruta o edita
+               img/relleno-promostore.svg por un collage de tus productos. -->
+          <span class="showcase__word" aria-hidden="true">PROMOSTORE</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= CATALOGO / CARRUSEL ================= -->
+    <section class="section carousel-section" id="catalogo" aria-labelledby="catalogo-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Catálogo</p>
+          <h2 class="section-title" id="catalogo-title">Piezas que elevan tu marca</h2>
+          <p class="section-intro">Una selección de artículos premium listos para personalizarse con tu logo.</p>
+        </header>
+
+        <div class="carousel" data-carousel aria-roledescription="carrusel" aria-label="Catálogo destacado">
+          <div class="carousel__viewport" data-carousel-viewport tabindex="0" aria-label="Contenido del carrusel, usa las flechas del teclado para navegar">
+            <ul class="carousel__track" data-carousel-track>
+              <li class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 4: Termos de acero">
+                <div class="carousel__media">
+                  <!-- Reemplaza este icono por: <img src="img/termo.jpg" alt="Termo de acero personalizado"> -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 3h8v3H8z" /><path d="M7 6h10v13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" />
+                  </svg>
+                </div>
+                <div class="carousel__body">
+                  <span class="carousel__tag">Hidratación</span>
+                  <h3 class="carousel__title">Termos de acero inoxidable</h3>
+                  <p>Doble pared al vacío con acabado premium, ideales para regalos ejecutivos y onboarding.</p>
+                  <ul class="check-list">
+                    <li>Conserva el frío 24 h y el calor 12 h</li>
+                    <li>Grabado láser permanente de tu logo</li>
+                    <li>Acero 18/8 libre de BPA</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4: Cargadores inalambricos">
+                <div class="carousel__media">
+                  <!-- Reemplaza este icono por: <img src="img/cargador.jpg" alt="Cargador inalámbrico con logo"> -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <div class="carousel__body">
+                  <span class="carousel__tag">Tecnología</span>
+                  <h3 class="carousel__title">Cargadores inalámbricos</h3>
+                  <p>Gadgets corporativos con carga rápida y opción de logo retroiluminado.</p>
+                  <ul class="check-list">
+                    <li>Carga rápida Qi de 15 W</li>
+                    <li>Logo iluminado opcional</li>
+                    <li>Superficie antideslizante</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4: Libretas premium">
+                <div class="carousel__media">
+                  <!-- Reemplaza este icono por: <img src="img/libreta.jpg" alt="Libreta premium personalizada"> -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h13a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" /><path d="M8 4v16" />
+                  </svg>
+                </div>
+                <div class="carousel__body">
+                  <span class="carousel__tag">Escritura</span>
+                  <h3 class="carousel__title">Libretas premium negro mate</h3>
+                  <p>Papel de alto gramaje y cubierta suave al tacto, el clásico que nunca falla.</p>
+                  <ul class="check-list">
+                    <li>Papel de 100 g marfil</li>
+                    <li>Grabado en bajo relieve</li>
+                    <li>Cierre elástico y marcapáginas</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4: Boligrafos ejecutivos">
+                <div class="carousel__media">
+                  <!-- Reemplaza este icono por: <img src="img/boligrafo.jpg" alt="Bolígrafo ejecutivo personalizado"> -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 21l1-4L16 5l3 3L7 20z" /><path d="M14 7l3 3" />
+                  </svg>
+                </div>
+                <div class="carousel__body">
+                  <span class="carousel__tag">Escritura</span>
+                  <h3 class="carousel__title">Bolígrafos ejecutivos</h3>
+                  <p>Cuerpo metálico equilibrado con tinta de flujo suave para una firma impecable.</p>
+                  <ul class="check-list">
+                    <li>Cuerpo de aluminio anodizado</li>
+                    <li>Tinta de secado rápido</li>
+                    <li>Estuche de regalo incluido</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="carousel__btn" type="button" data-carousel-prev aria-label="Diapositiva anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="carousel__dots" data-carousel-dots role="tablist" aria-label="Seleccionar diapositiva"></div>
+            <button class="carousel__btn" type="button" data-carousel-next aria-label="Diapositiva siguiente">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section class="section benefits" id="beneficios" aria-labelledby="beneficios-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Por qué elegirnos</p>
+          <h2 class="section-title" id="beneficios-title">Beneficios que tu empresa nota</h2>
+        </header>
+
+        <ul class="benefits__grid">
+          <li class="benefit-card">
+            <!-- Coloca aquí una imagen que represente "calidad premium" -->
+            <figure class="benefit-card__media">
+              <img src="img/beneficio-1.svg" alt="Representación de calidad premium" width="800" height="500" loading="lazy" />
+            </figure>
+            <div class="benefit-card__body">
+              <h3>Calidad premium</h3>
+              <p>Materiales de primera línea que proyectan la imagen que tu marca merece.</p>
+            </div>
+          </li>
+          <li class="benefit-card">
+            <!-- Coloca aquí una imagen que represente "entregas puntuales" -->
+            <figure class="benefit-card__media">
+              <img src="img/beneficio-2.svg" alt="Representación de entregas puntuales" width="800" height="500" loading="lazy" />
+            </figure>
+            <div class="benefit-card__body">
+              <h3>Entregas puntuales</h3>
+              <p>Producción ágil y logística propia para cumplir incluso en temporada alta.</p>
+            </div>
+          </li>
+          <li class="benefit-card">
+            <!-- Coloca aquí una imagen que represente "personalización total" -->
+            <figure class="benefit-card__media">
+              <img src="img/beneficio-3.svg" alt="Representación de personalización total" width="800" height="500" loading="lazy" />
+            </figure>
+            <div class="benefit-card__body">
+              <h3>Personalización total</h3>
+              <p>Del color al empaque: cada pieza se adapta a tu identidad de marca.</p>
+            </div>
+          </li>
+          <li class="benefit-card">
+            <!-- Coloca aquí una imagen que represente "asesoría dedicada" -->
+            <figure class="benefit-card__media">
+              <img src="img/beneficio-4.svg" alt="Representación de asesoría dedicada" width="800" height="500" loading="lazy" />
+            </figure>
+            <div class="benefit-card__body">
+              <h3>Asesoría dedicada</h3>
+              <p>Un experto te acompaña en selección, diseño y seguimiento del pedido.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CLIENTES / TESTIMONIOS ================= -->
+    <section class="section testimonials" id="clientes" aria-labelledby="clientes-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Confían en nosotros</p>
+          <h2 class="section-title" id="clientes-title">Marcas que ya dejan su huella</h2>
+          <p class="section-intro">Empresas de distintos sectores eligen PROMOSTORE para sus campañas y eventos.</p>
+        </header>
+
+        <ul class="brand-row" aria-label="Marcas colaboradoras">
+          <li class="brand-pill">ANDINA</li>
+          <li class="brand-pill">CUMBRE</li>
+          <li class="brand-pill">PANGEA</li>
+          <li class="brand-pill">NOVA</li>
+          <li class="brand-pill">HELIOS</li>
+        </ul>
+
+        <div class="rating-summary" role="img" aria-label="Calificación promedio de 4.9 sobre 5, basada en 312 reseñas">
+          <span class="rating-summary__score">4.9</span>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-summary__meta">Promedio de 312 reseñas verificadas</span>
+        </div>
+
+        <ul class="testimonials__grid">
+          <li class="testimonial">
+            <blockquote class="testimonial__quote">
+              <span class="stars" role="img" aria-label="Calificación: 5 de 5 estrellas">★★★★★</span>
+              <p>“Los termos fueron el regalo estelar de nuestro evento anual. La calidad del grabado superó lo esperado.”</p>
+            </blockquote>
+            <figcaption class="testimonial__person">
+              <span class="avatar avatar--1" aria-hidden="true">MF</span>
+              <span><strong>María Fernández</strong><small>Directora de RR. HH., Andina</small></span>
+            </figcaption>
+          </li>
+
+          <li class="testimonial">
+            <blockquote class="testimonial__quote">
+              <span class="stars" role="img" aria-label="Calificación: 5 de 5 estrellas">★★★★★</span>
+              <p>“Pedimos 800 unidades para nuestros clientes y todo llegó impecable y a tiempo.”</p>
+            </blockquote>
+            <figcaption class="testimonial__person">
+              <span class="avatar avatar--2" aria-hidden="true">CR</span>
+              <span><strong>Carlos Ríos</strong><small>Gerente de Marketing, Cumbre</small></span>
+            </figcaption>
+          </li>
+
+          <li class="testimonial">
+            <blockquote class="testimonial__quote">
+              <span class="stars" role="img" aria-label="Calificación: 4 de 5 estrellas">★★★★☆</span>
+              <p>“El diseño personalizado reflejó perfecto nuestra identidad. Repetiremos sin dudarlo.”</p>
+            </blockquote>
+            <figcaption class="testimonial__person">
+              <span class="avatar avatar--3" aria-hidden="true">LO</span>
+              <span><strong>Lucía Ortega</strong><small>Jefa de Compras, Pangea</small></span>
+            </figcaption>
+          </li>
+
+          <li class="testimonial">
+            <blockquote class="testimonial__quote">
+              <span class="stars" role="img" aria-label="Calificación: 5 de 5 estrellas">★★★★★</span>
+              <p>“Valoramos su enfoque sostenible; el empaque reciclado encajó con nuestros objetivos.”</p>
+            </blockquote>
+            <figcaption class="testimonial__person">
+              <span class="avatar avatar--4" aria-hidden="true">DS</span>
+              <span><strong>Diego Salas</strong><small>Community Manager, Helios</small></span>
+            </figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Hablemos</p>
+          <h2 class="section-title" id="contacto-title">Cuéntanos tu proyecto</h2>
+          <p class="section-intro">Te enviamos una propuesta personalizada en menos de 48 horas.</p>
+        </header>
+
+        <div class="contact__inner">
+          <div class="contact__aside">
+            <!-- Coloca aquí la foto de una persona de cuerpo completo -->
+            <figure class="contact__media">
+              <img src="img/persona.svg" alt="Asesor comercial de PROMOSTORE" width="600" height="900" loading="lazy" />
+            </figure>
+            <ul class="contact__quick" aria-label="Datos de contacto">
+              <li><strong>Correo</strong><a href="mailto:ventas@promostore.com">ventas@promostore.com</a></li>
+              <li><strong>Teléfono</strong><a href="tel:+573001234567">+57 300 123 4567</a></li>
+              <li><strong>Horario</strong><span>Lun a vie, 8:00 a 18:00</span></li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card__head">
+              <h3>Solicita tu cotización</h3>
+              <p>Completa el formulario y un asesor te contactará.</p>
+            </div>
+
+            <form class="contact-form" data-contact-form novalidate>
+              <div class="form-field">
+                <label for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required aria-required="true" aria-describedby="error-nombre" />
+                <p class="form-error" id="error-nombre" data-error-for="nombre" role="alert"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Correo corporativo <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="error-email" />
+                <p class="form-error" id="error-email" data-error-for="email" role="alert"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="telefono">Teléfono <span class="optional">(opcional)</span></label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel" aria-describedby="error-telefono" />
+                <p class="form-error" id="error-telefono" data-error-for="telefono" role="alert"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="empresa">Empresa <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="empresa" name="empresa" autocomplete="organization" required aria-required="true" aria-describedby="error-empresa" />
+                <p class="form-error" id="error-empresa" data-error-for="empresa" role="alert"></p>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="producto-interes">Producto de interés <span class="req" aria-hidden="true">*</span></label>
+                <select id="producto-interes" name="producto" required aria-required="true" aria-describedby="error-producto">
+                  <option value="" selected disabled>Selecciona una opción</option>
+                  <option value="termos">Termos de acero</option>
+                  <option value="tecnologia">Cargadores / tecnología</option>
+                  <option value="libretas">Libretas premium</option>
+                  <option value="boligrafos">Bolígrafos ejecutivos</option>
+                  <option value="otro">Otro / asesoría</option>
+                </select>
+                <p class="form-error" id="error-producto" data-error-for="producto" role="alert"></p>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true" aria-describedby="error-mensaje ayuda-mensaje"></textarea>
+                <p class="form-help" id="ayuda-mensaje">Cuéntanos cantidades aproximadas y fechas de entrega.</p>
+                <p class="form-error" id="error-mensaje" data-error-for="mensaje" role="alert"></p>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label class="checkbox">
+                  <input type="checkbox" id="privacidad" name="privacidad" required aria-required="true" aria-describedby="error-privacidad" />
+                  <span>Acepto la <a href="#" data-policy>política de tratamiento de datos</a> y el uso de mi información para recibir la cotización. <span class="req" aria-hidden="true">*</span></span>
+                </label>
+                <p class="form-error" id="error-privacidad" data-error-for="privacidad" role="alert"></p>
+              </div>
+
+              <!-- Trampa anti-spam -->
+              <div class="honeypot" aria-hidden="true">
+                <label for="website">No completar</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button class="btn btn--primary btn--lg form-submit" type="submit">Enviar solicitud</button>
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="#inicio" aria-label="PROMOSTORE, ir al inicio">
+          <img class="brand__mark" src="img/logo.svg" alt="" width="30" height="30" />
+          <span class="brand__name">PROMO<em>STORE</em></span>
+        </a>
+        <p>Artículos promocionales premium que hacen memorable tu marca.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Enlaces del pie de página">
+        <h2 class="visually-hidden">Enlaces útiles</h2>
+        <ul>
+          <li><a href="#producto">Producto</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__social">
+        <h2 class="visually-hidden">Redes sociales</h2>
+        <ul>
+          <li><a href="#" aria-label="Instagram de PROMOSTORE">Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn de PROMOSTORE">LinkedIn</a></li>
+          <li><a href="#" aria-label="WhatsApp de PROMOSTORE">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; <span data-year>2026</span> PROMOSTORE. Todos los derechos reservados.</p>
+      <p class="site-footer__note">Sitio con findes demostrativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

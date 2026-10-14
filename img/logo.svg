@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logotipo PROMOSTORE">
+  <rect width="64" height="64" rx="14" fill="#2C4596"/>
+  <path d="M24 48 V16 h10 a9 9 0 0 1 0 18 h-6 v14 z" fill="#FFFFFF"/>
+  <circle cx="44" cy="46" r="4" fill="#C9A227"/>
+</svg>
